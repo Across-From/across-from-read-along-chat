@@ -3,9 +3,6 @@
 Across from read along chat is a reference bundle for teams who compare instant messaging backends, topic-threaded team chat, and privacy-first messengers while keeping a single read-along narrative. The workspace stitches together Go servers, Python bots, JavaScript desktop helpers, and validation scripts copied from active open source chat ecosystems. You can treat it as a map when you migrate rooms, wire webhooks, or explain to newcomers how channels differ from direct messages across platforms.
 
 The name reflects a simple product question: when conversation happens **across** tools, what do you show **from** each side so people still feel present in one timeline? This repository does not replace Zulip, Tinode, SimpleX, OpenIM, Rocket.Chat, Khoj, or Owncast. It collects their shapes so you can reason about federation, threading, and discovery lists without opening a dozen tabs.
-
-![Topic threading preview](images/channels-and-topics.png)
-
 ## Why this bundle exists
 
 Modern chat is rarely one application. Marketing may live in a team workspace, engineering in a self-hosted stack, and community support in a identifier-free messenger. Read-along sessions, all-hands timelines, and travel-style event threads all need the same primitives: durable history, clear topic boundaries, and lightweight bots that answer predictable questions.
@@ -38,9 +35,6 @@ Zulip’s product thesis—that channels plus topics beat flat room logs—is re
 ### Privacy-first connection flows
 
 SimpleX product notes under `simplex-product/` describe onboarding, messaging flows, and chat view responsibilities without relying on global user identifiers. That model fits communities who want to **come across** new collaborators through verified links rather than searchable phone books. Compare `simplex-product/messaging-flow.md` with `simplex-product/concepts.md` when you document your own invite policy.
-
-![SimpleX overview artifact](images/simplex-overview.jpg)
-
 ### Secure team communications at scale
 
 Rocket.Chat-style issue templates in `docs/rocketchat-bug-report.md` encode severity, environment, and reproduction detail. Even if your runtime is not Rocket.Chat, the template reduces back-and-forth when volunteers triage reports. Pair it with Owncast security guidance in `docs/owncast-security.md` when streaming plus chat exposes new attack surfaces.
